@@ -1,9 +1,9 @@
 {
-  "template_name": "chroma",
-  "status": "unpublished",
-  "last_step_completed": 9,
+  "template_name": "Chroma",
+  "status": "published",
+  "last_step_completed": 13,
   "template_id": "5c2dcdf6-eb61-4e2f-9f40-4f5db3764cee",
-  "template_code": "_CiKop",
+  "template_code": "chroma-1",
   "editor_url": "https://railway.com/workspace/templates/5c2dcdf6-eb61-4e2f-9f40-4f5db3764cee",
   "workspace_id": "1181afaf-1954-4f4d-8631-86b36b1bc673",
   "workspace_name": "mcmax",
@@ -19,13 +19,12 @@
   "healthcheck_path": "/api/v2/heartbeat",
   "domain": "chroma-production-d0a0.up.railway.app",
   "category": "AI/ML",
-  "description": "Chroma vector database for AI - persistent embeddings & metadata",
+  "description": "Chroma vector database for AI apps - embeddings, RAG & semantic search",
   "icon": "https://raw.githubusercontent.com/mc9max/chroma/master/template-icon.svg",
   "repo_url": "https://github.com/mc9max/chroma",
-  "deploy_button_draft": "https://railway.com/new/template/_CiKop",
+  "deploy_button_draft": null,
   "verified": {
     "local_podman_e2e": true,
-    "local_auth_heartbeat_exempt": true,
     "live_health_200": true,
     "live_version_1_0_0": true,
     "live_collection_create_list": true,
@@ -34,13 +33,19 @@
     "healthcheck_applied_via_iac": true,
     "icon_url_200": true,
     "readme_sections_6_plus": true,
-    "draft_unpublished": true
+    "deploy_url_200": true,
+    "marketplace_search_indexed": true,
+    "overview_no_stripped_placeholders": true
   },
-  "notes": "Draft created via `railway templates create` (railway-templates MCP server not configured in this session; CLI wraps the same dashboard Generate Template action). Project renamed from random init name 'zoological-flexibility' to 'chroma' BEFORE draft creation — template name/slug derives from project name. Marketplace already has community Chroma templates with codes 'chroma', 'tifygm', 'chroma-db' — final published code will be Railway-deduped (e.g. chroma-N); README deploy button currently points at draft code _CiKop and must be re-pointed at the final code at publish time. Image-source services ignore repo railway.json; healthcheckPath/healthcheckTimeout were applied via .railway/railway.ts (config apply), and domain target port set via `railway domain update --port 8000`. Set env at publish: category AI/ML, description (64 chars), readme-file README.md, image icon URL. NOTE: `volume(...)` IaC must NOT include mountPath (invalid key — patch rejection); mountPath lives on the service volumeMounts.",
-  "publish_pending": [
-    "railway templates update 5c2dcdf6-eb61-4e2f-9f40-4f5db3764cee --category AI/ML --description \"Chroma vector database for AI - persistent embeddings & metadata\" --readme-file README.md --image <icon-url> --json",
-    "re-point README deploy button to final published code + republish",
-    "update templates.json status to published"
-  ],
-  "last_updated": "2026-10-06T07:40:00Z"
+  "notes": "Draft created via `railway templates create` (railway-templates MCP server not configured in this session; CLI wraps the same dashboard Generate Template action). Project renamed from random init name 'zoological-flexibility' to 'chroma' BEFORE draft creation \u2014 template name/slug derives from project name. Marketplace already has community Chroma templates with codes 'chroma', 'tifygm', 'chroma-db' \u2014 final published code will be Railway-deduped (e.g. chroma-N); README deploy button currently points at draft code _CiKop and must be re-pointed at the final code at publish time. Image-source services ignore repo railway.json; healthcheckPath/healthcheckTimeout were applied via .railway/railway.ts (config apply), and domain target port set via `railway domain update --port 8000`. Set env at publish: category AI/ML, description (64 chars), readme-file README.md, image icon URL. NOTE: `volume(...)` IaC must NOT include mountPath (invalid key \u2014 patch rejection); mountPath lives on the service volumeMounts.",
+  "last_updated": "2026-10-06T08:20:00Z",
+  "deploy_url": "https://railway.com/deploy/chroma-1",
+  "published_at": "2026-10-06T07:50:00Z",
+  "draft_code_was": "_CiKop",
+  "publish_notes": [
+    "Published via GraphQL templatePublish (railway-templates MCP not configured this session; skill railway-template-publish-graph documents this fallback; CLI publish forbidden by workspace rules)",
+    "Marketplace name auto-set to Chroma, code deduped chroma-1 (chroma taken by community template)",
+    "README button re-pointed to /deploy/chroma-1 and readme re-patched post-publish (draft code _CiKop now 404s)",
+    "Verified: templates list status PUBLISHED + marketplace search shows entry under mcmax; /deploy/chroma-1 200"
+  ]
 }
