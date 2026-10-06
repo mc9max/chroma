@@ -6,7 +6,7 @@ Open-source data infrastructure for AI. Store embeddings with metadata, search w
 
 Host your own Chroma instance on Railway. This template provisions the official Chroma server image (v1.5.9) with persistent storage for collections and embeddings.
 
-[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/new/template/_CiKop)
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/chroma-1)
 
 ## Why Deploy
 
