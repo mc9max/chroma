@@ -1,0 +1,14 @@
+{
+  "PORT": {
+    "value": "8000",
+    "description": "HTTP API port. The official image listens on 8000 via its baked-in /config.yaml; Railway maps the public domain to this port."
+  },
+  "IS_PERSISTENT": {
+    "value": "TRUE",
+    "description": "Persist the embedded database to the /data Railway volume. Keep TRUE so collections survive restarts and redeploys."
+  },
+  "ANONYMIZED_TELEMETRY": {
+    "value": "FALSE",
+    "description": "Disable anonymous product telemetry."
+  }
+}
