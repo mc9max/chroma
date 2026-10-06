@@ -1,0 +1,7 @@
+{
+  "name": "chroma-template",
+  "private": true,
+  "dependencies": {
+    "railway": "^3.13.0"
+  }
+}
